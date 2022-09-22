@@ -1,0 +1,110 @@
+body{
+    background-image: url(img/HD-wallpaper-light-glare-brown-wavy-lines-in-dark-brown-background-brown-aesthetic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D2B48C;
+    padding: 10px
+}
+
+
+
+h1{
+    color: white; 
+    font-style: initial;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 30px;
+}
+nav{
+    padding-left: 5px
+}
+.link{
+    text-decoration: none; /*  para tirar sublinhado  */
+    color: maroon;
+    padding: 10px; /* espaçamento interno entre os links */
+    font-size: 24px; /* tamanho da fonte */
+}
+
+a:hover{ 
+    color:#EEA594;
+    transition: 0.5s;
+}
+
+.cont-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* quando a tela diminuir, ele vai alinhar um abaixo do outro. Quando grande, estará lado-a-lado */
+    margin: 150px; /* para descolar a imagem do topo*/
+    gap: 30px; /*para descolar o texto da imagem*/
+}
+
+.foto{
+    width: 400px;
+    border-radius: 1000px; /*arredonda a imagem*/
+}
+
+.sobre-mim{
+    font-size: 30px;
+    color: black;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none; /*para tirar a bolinha dos tópicos */
+    flex-wrap: wrap; /*para não embolar em telas menores */
+    gap: 30px; /*espaçamento quando a tela diminuir */
+}
+
+li{
+    background-color: saddlebrown;
+    padding: 10px 5px; /*10 pra cima e pra baixo e 5 pros lados */ 
+    border-radius: 12px; 
+}
+
+li:hover{
+    /* padding: 20px 10px; aumentar quando passar o mouse */
+    background-color: rgb(198, 176, 221);
+    transition:0.5s /*para fazer uma transição */
+}
+
+.item{
+    color: #fff;
+}
+
+footer{
+    background-color:#DEB887 ;
+    margin-top: 200px;
+    padding: 10px 0;
+   }
+
+.footer{
+    color:black;
+    text-align: center;
+}
+
+@media(max-width:580px){
+    .link{
+        font-size:1rem;
+    }
+}
+
+@media(max-width:340px){
+    ul{
+        margin: 0 15px
+    }
+}
